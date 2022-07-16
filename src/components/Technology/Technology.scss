@@ -1,0 +1,129 @@
+@import "../../styles/root.scss";
+
+.technology {
+    margin: 100px 0 100px 0;
+
+    &-content {
+        &_top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            &-title {
+                font-family: var(--font-s);
+                font-size: 42px;
+                line-height: 53px;
+                text-align: center;
+                color: var(--darkBlue);
+                max-width: 895px;
+                width: 100%;
+                @media(max-width: 425px) {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+                @media(max-width: 375px) {
+                    font-size: 29px;
+                    line-height: 35px;
+                }
+            }
+
+            &-txt {
+                margin: 30px 0 50px 0px;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 32px;
+                text-align: center;
+                color: var(--lightGrey);
+                max-width: 778px;
+                width: 100%;
+                @media(max-width: 425px) {
+                    font-size: 15px;
+                    line-height: 32px;
+                }
+                
+            }
+
+            &-btns {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &_btn {
+                    font-size: 15px;
+                    text-align: center;
+                    color: var(--blue);
+                    background: rgba(5, 85, 255, 0.1);
+                    border-radius: 30px;
+                    padding: 20px 25px 20px 50px;
+                    border: none;
+                    @media(max-width: 425px) {
+                        padding: 15px 20px 15px 30px;
+                    }
+
+                    span {
+                        background: var(--white);
+                        padding: 7px 15px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+
+        &_bottom {
+            display: flex;
+            align-items: center;
+            margin: 100px 0 0 0;
+            position: relative;
+            @media (max-width: 425px) {
+                &:nth-child(3){
+                    flex-direction: column-reverse;
+                    margin: unset;
+                } 
+            }
+           @media (max-width: 425px) {
+             &:nth-child(2){
+                flex-direction: column-reverse;
+            }
+           }
+            &-img{
+                @media (max-width: 425px) {
+                  margin-top: 10%;
+                }
+                img{
+                    width: 100%;
+                }
+            } 
+            &-info {
+                &_title {
+                    font-family: var(--font-s);
+                    font-weight: 900;
+                    font-size: 72px;
+                    color: var(--darkBlue);
+                    @media(max-width: 425px) {
+                        font-size: 32px;
+                    }
+                }
+
+                &_txt {
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: var(--lightGrey);
+                    @media(max-width: 425px) {
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+                }
+
+                &_link {
+                    font-size: 18px;
+                    line-height: 22px;
+                    text-align: center;
+                    color: var(--black);
+                    border-bottom: 4px solid var(--blue);
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+}

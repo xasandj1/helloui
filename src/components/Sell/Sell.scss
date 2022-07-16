@@ -1,0 +1,160 @@
+@import "../../styles/root.scss";
+
+.sell {
+    margin: 120px 0 150px 0;
+
+    @media (max-width: 425px) {
+        margin: 60px 0;
+    }
+
+    &-content {
+        @media (max-width: 425px) {
+            margin: 20px 0 20px 0;
+        }
+
+        &_top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            &-title {
+                font-family: var(--font-s);
+                font-weight: 900;
+                font-size: 96px;
+                text-align: center;
+                color: var(--darkBlue);
+                max-width: 953px;
+                width: 100%;
+                margin-bottom: 35px;
+
+                @media (max-width: 425px) {
+                    font-size: 40px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            &-txt {
+                font-size: 22px;
+                line-height: 32px;
+                text-align: center;
+                color: var(--lightGrey);
+                max-width: 705px;
+                width: 100%;
+
+                @media (max-width: 425px) {
+                    font-size: 14px;
+                }
+            }
+
+            &-btns {
+                @media (max-width: 425px) {
+                    display: flex;
+                    z-index: -1;
+                }
+
+                &_btn {
+                    font-size: 18px;
+                    line-height: 22px;
+                    border: none;
+                    padding: 13px 35px;
+                    border-radius: 30px;
+                    margin: 40px 10px 0;
+                    transition: .5s ease;
+                    position: relative;
+                    z-index: 1;
+                    overflow: hidden;
+                    background: var(--white);
+                    color: var(--blue);
+                    box-shadow: 0px 10px 40px rgba(176, 201, 253, 0.3);
+
+                    @media (max-width: 425px) {
+                        margin: 0px 10px 20px;
+                        font-size: 16px;
+                        padding: 13px 15px
+                    }
+
+                    @media (max-width: 375px) {
+                        margin: 0px 10px 20px;
+                        font-size: 13px;
+                        padding: 13px 15px
+                    }
+
+                    @media (max-width: 320px) {
+                        margin: 0px 10px 20px;
+                        font-size: 12px;
+                        padding: 10px 15px
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        right: 0;
+                        width: 0;
+                        height: 100%;
+                        z-index: -1;
+                        background: var(--blue);
+                        transition: .5s ease;
+                    }
+
+                    &:hover,
+                    &.active {
+                        color: var(--white);
+
+                        &::before {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        &_bottom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+        }
+
+        &_info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            &-txt {
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                color: var(--lightGrey);
+
+                @media (max-width: 425px) {
+                    font-size: 14px;
+                }
+            }
+
+            &-supports {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                img {
+                    margin: 25px 25px 0;
+                }
+            }
+        }
+
+        &_hr {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            margin: 100px 0 0 0;
+        }
+    }
+}

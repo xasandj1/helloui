@@ -1,0 +1,49 @@
+
+:root {
+ --body: #fff;
+ --blue:#0555FF;
+ --darkBlue: #050038;
+ --lightGrey:#5B5E6D;
+ --white: #fff;
+ --font-s: 'CircularStd';
+ --font-i: 'Inter';
+ --font-r: 'Roboto';
+ --font-p: 'Poppins';
+--black:#000;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-i);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border-radius: none;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+    &:hover{
+        color: unset;
+    }
+}
